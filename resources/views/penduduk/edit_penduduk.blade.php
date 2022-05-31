@@ -196,7 +196,7 @@
                   <div class="col-sm-10">
                     <select class="form-control select2" name="cacat" style="width: 100%;">
                       @foreach ($cacats as $cacat)
-                        <option value="{{ $cacat->id }}">{{ $cacat->nama }}</option>
+                        <option value="{{ $cacat->id }}">{{ $cacat->cacat_nama }}</option>
                       @endforeach
                     </select>
                   </div>
