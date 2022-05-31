@@ -146,6 +146,8 @@ Route::group(['middleware' => ['superadmin']], function ()
     Route::put('/surat/preview/{slug}', 'SuratController@preview'); 
 
     Route::get('/pengguna', 'UsersController@index');
+    Route::post('/pengguna/create', 'UsersController@create')->name('create-user');
+    Route::get('/pengguna/delete/{id}', 'UsersController@delete')->name('delete-user');
 
     Route::get('/masukan', 'MasukanController@index');
 
